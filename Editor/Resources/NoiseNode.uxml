@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="NoiseNode">
+        <ui:DropdownField label="Noise 0" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="NoiseDropdown" />
+    </ui:VisualElement>
+</ui:UXML>

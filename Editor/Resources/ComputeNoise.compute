@@ -1,0 +1,23 @@
+#pragma kernel NoiseKernel 
+
+#include "Packages/com.comettailz.noisekit/Editor/Resources/NoiseKit.hlsl" 
+
+RWTexture2D<float4> _outputTex; 
+
+StructuredBuffer<float> _propsBuffer0;
+
+StructuredBuffer<float> _curveBuffer0;
+
+
+float4 _res; 
+
+[numthreads(8,8,1)] 
+void NoiseKernel (uint3 id : SV_DispatchThreadID) 
+{ 
+float2 uv = id.xy / _res.xy; 
+float Noise_0 = cellularNoise2D(uv , float2(_propsBuffer0[0], _propsBuffer0[0]), 4.0, _curveBuffer0[0], _curveBuffer0[1], _curveBuffer0[2]);
+float r = Noise_0;
+float g = Noise_0;
+float b = Noise_0;
+float a = Noise_0;
+_outputTex[id.xy] = float4(r, g, b, a);} 

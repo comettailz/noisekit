@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Property" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-start; margin-top: 0; margin-right: 10px; margin-left: 10px; -unity-font-style: normal; flex-direction: column-reverse;">
+        <ui:VisualElement name="NoiseProperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-start; margin-top: 5px; flex-direction: row; flex-shrink: 1;">
+            <ui:Label tabindex="-1" text="PropertyName" display-tooltip-when-elided="true" name="PropertyName" style="-unity-font-style: normal;" />
+            <ui:Slider picking-mode="Ignore" value="42" high-value="100" low-value="0" name="PropertySlider" style="flex-direction: row; flex-wrap: nowrap; align-items: auto; justify-content: flex-start; max-height: none; max-width: none; margin-right: 0; min-width: auto; padding-left: 5px; padding-right: 0; flex-shrink: 1; flex-grow: 1; margin-top: 0; margin-bottom: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Noise" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.25); margin-left: 0; padding-left: 0; margin-bottom: 0; padding-bottom: 0; border-top-width: 0; border-left-width: 0; border-bottom-width: 0.5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+        <ui:Foldout name="NoiseFoldout" text=" My Noise" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(164, 164, 164); border-right-color: rgb(164, 164, 164); border-top-color: rgb(164, 164, 164); border-bottom-color: rgb(164, 164, 164); -unity-font-style: normal; padding-bottom: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; padding-top: 0; margin-top: 0; margin-right: 0; margin-left: 20px; margin-bottom: 0; padding-left: 0; padding-right: 0; -unity-text-align: upper-left; white-space: normal; translate: 0 0; flex-direction: column; background-color: rgba(178, 178, 178, 0);">
+            <ui:VisualElement name="Properties" style="flex-shrink: 1; margin-right: 10px;" />
+            <uie:CurveField label="Curve" name="Remapper" style="margin-left: 10px; margin-right: 20px; margin-top: 5px; margin-bottom: 10px; -unity-font-style: normal; flex-direction: row;" />
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>

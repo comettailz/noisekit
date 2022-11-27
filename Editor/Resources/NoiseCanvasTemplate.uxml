@@ -1,0 +1,5 @@
+<UXML xmlns="UnityEngine.UIElements">
+  <VisualElement class="noise-canvas">      
+    <VisualElement class="noise-canvas-icon"/>   
+  </VisualElement>
+</UXML>
